@@ -55,7 +55,7 @@
     color: white;
     text-align: center;
       padding-top:1vw;
-      font-size: 3.4vw;
+      font-size: 4vw;
     flex-grow: 1; /* Chaque item prend de l'espace disponible */
     flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
     flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */
@@ -143,16 +143,13 @@
          display: flex;
          flex-direction:column;
     }
-    nav {
-      flex-direction: column; /* Change la direction des éléments en vertical sur mobile */
     
-  }
-
   .nav-item {
       flex-grow: 1; /* L'élément prend toute la place disponible */
       flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
       width: 100%; /* Occupe toute la largeur du parent */
       text-align: center;
+      font-size: 6vw;
   }
 
     section {
