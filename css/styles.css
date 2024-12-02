@@ -54,8 +54,8 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     text-align: center;
-      padding-top:1em;
-  font-size:30px;
+      padding-top:1vw;
+      font-size: 3.4vw;
     flex-grow: 1; /* Chaque item prend de l'espace disponible */
     flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
     flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */
