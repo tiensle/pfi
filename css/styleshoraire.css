@@ -108,12 +108,94 @@ height: 166px;
 
         background-color: yellow;
       }
+    
   
   
  
- 
+      .jours {
+        
+        font-weight: 900; 
+      
+        color: #333;
+        text-transform: uppercase;
+      
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;            
+        border: 1px solid #060606;              
+       
+        font-size: 12px;
+       
+    }
+    .cellfr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;             /* Couleur de fond des cellules */
+        border: 1px solid #060606;                /* Bordure des cellules */
+        font-weight: bold;
+        font-size: 12px;
+        background-color: rgba(113, 215, 113, 0.648);
 
 
+    }
+    .cellweb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                   /* Couleur de fond des cellules */
+        border: 1px solid #060606;                /* Bordure des cellules */
+        font-weight: bold;
+        font-size: 12px;
+        background-color: lightyellow;
+
+    }.cellexploit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                  /* Couleur de fond des cellules */
+        border: 1px solid #060606;                /* Bordure des cellules */
+        font-weight: bold;
+        font-size: 12px;
+        background-color: rgba(218, 81, 81, 0.6);
+
+    }
+    .cellmath{display: flex;
+        justify-content: center;
+        align-items: center;
+               /* Couleur de fond des cellules */
+        border: 1px solid #060606;                /* Bordure des cellules */
+        font-weight: bold;
+        font-size: 12px;
+        background-color: rgba(74, 169, 216, 0.586);
+    }
+.cellphilo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+           /* Couleur de fond des cellules */
+    border: 1px solid #060606;                /* Bordure des cellules */
+    font-weight: bold;
+    font-size: 12px;
+    background-color: rgba(228, 112, 217, 0.499);
+
+
+}
+.cellprog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+           /* Couleur de fond des cellules */
+    border: 1px solid #060606;                /* Bordure des cellules */
+    font-weight: bold;
+    font-size: 12px;
+    background-color: rgba(106, 106, 232, 0.499);
+
+
+}
  
  
   
@@ -230,6 +312,7 @@ html, body {
  article{
 
     grid-area: article;
+    height:400px
  }
        
   
