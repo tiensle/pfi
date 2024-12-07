@@ -8,6 +8,12 @@
     color: white; 
     text-decoration: none;
 }
+#wikipedia{
+    color: black;
+font-size: 4vh;
+display: inline-block;
+padding: 10px;
+}
 
 
 a:hover {
@@ -21,7 +27,7 @@ a:hover {
     height: 100vh; 
     width: 100%;
     grid-template-columns: 100%; 
-    grid-template-rows: 3fr 1fr 6fr 2fr 2fr;
+    grid-template-rows: auto auto auto auto auto ;
     grid-template-areas: 
       "header header"
       "nav nav"
@@ -71,9 +77,9 @@ a:hover {
     text-align: center;
       padding-top:1vw;
       font-size: 3.8vw;
-    flex-grow: 1; /* Chaque item prend de l'espace disponible */
-    flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
-    flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */}
+    flex-grow: 1; 
+    flex-shrink: 1;
+    flex-basis: 16%; }
 
 
     main{
@@ -83,13 +89,13 @@ a:hover {
     }
     .grid-section {
         display: grid;
-        grid-template-columns: repeat(6, 1fr); /* 12 colonnes de tailles égales */
-        grid-template-rows: repeat(12, 1fr);    /* 6 lignes de tailles égales */
-                           /* Espacement entre les cellules */
-                             /* Marge interne */
-        background-color: #f0f0f0;             /* Couleur de fond */
+        grid-template-columns: 2fr 5fr;
+        grid-template-rows: repeat(5, 1fr);
+                          
+                           
+        background-color: #f0f0f0;             
         border: 1px solid #ccc;  
-        height:700px;
+        height:1000px;
       width: 100%;
       }
       
@@ -97,14 +103,34 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ffffff;             /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
+        background-color: #ffffff;            
+        border: 1px solid #060606;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 2.5vh;
+        padding:0.5em;
        
       }
+      .celljob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;             
+        border: 1px solid #060606;                
+        font-weight: bold;
+        font-size: 3vh;
+        padding:0.2em;
+        
+
+      }
+      .grid-section > div:nth-child(odd) {
+        background-color: #f5f5f5; 
+    }
+    
+    .grid-section > div:nth-child(even) {
+        background-color: #eaeaea; 
+    }
       article{
-height: 600px;
+height: 100px;
           font-size: 20px;
         background-color: rgb(250, 230, 210)
 
@@ -120,100 +146,20 @@ height: 600px;
         margin-top: 30px;
         display:inline-block;
         padding-bottom:40px;
+        padding:10px;
 
       }
-      .imgcours{ 
-          float:left
-      }
+    
     
   
   
  
-      .jours {
-        
-        font-weight: 900; 
       
-        color: #333;
-        text-transform: uppercase;
-      
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffffff;            
-        border: 1px solid #060606;              
-       
-        font-size: 12px;
-       
-    }
-    .cellfr{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffffff;             /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
-        font-weight: bold;
-        font-size: 12px;
-        background-color: rgba(113, 215, 113, 0.648);
+    
+
+   
 
 
-    }
-    .cellweb{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-                   /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
-        font-weight: bold;
-        font-size: 12px;
-        background-color: lightyellow;
-
-    }.cellexploit{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-                  /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
-        font-weight: bold;
-        font-size: 12px;
-        background-color: rgba(218, 81, 81, 0.6);
-
-    }
-    .cellmath{display: flex;
-        justify-content: center;
-        align-items: center;
-               /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
-        font-weight: bold;
-        font-size: 12px;
-        background-color: rgba(74, 169, 216, 0.586);
-    }
-.cellphilo{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-           /* Couleur de fond des cellules */
-    border: 1px solid #060606;                /* Bordure des cellules */
-    font-weight: bold;
-    font-size: 12px;
-    background-color: rgba(228, 112, 217, 0.499);
-
-
-}
-.cellprog{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-           /* Couleur de fond des cellules */
-    border: 1px solid #060606;                /* Bordure des cellules */
-    font-weight: bold;
-    font-size: 12px;
-    background-color: rgba(106, 106, 232, 0.499);
-
-
-}
- 
  
   
   
@@ -260,7 +206,7 @@ html, body {
     .conteneur {
     
         display: grid;
-        grid-template-columns: auto auto; /* 2 colonnes pour la version mobile */
+        grid-template-columns:auto auto; /* 2 colonnes pour la version mobile */
         grid-template-rows: auto auto auto auto auto; /* 5 rangées pour les éléments */
         grid-template-areas:
             "header header"
@@ -271,12 +217,15 @@ html, body {
     }
     .grid-section {
         display: grid;
-        grid-template-columns: repeat(6, 1fr); /* 3 colonnes égales */
-        grid-template-rows: repeat(12, 1fr);  /* 24 lignes égales */
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        height: 1400px;  /* Ajusté pour la hauteur totale */
-        width: 100%;
+        grid-template-columns: 2fr 5fr;
+        grid-template-rows: repeat(5, 1fr);
+                           /* Espacement entre les cellules */
+                             /* Marge interne */
+        background-color: #f0f0f0;             /* Couleur de fond */
+        border: 1px solid #ccc;  
+        height:2000px;
+      width: 100%;
+      min-width: 40vh;
     }
    
 
@@ -301,7 +250,7 @@ html, body {
     nav {
         grid-area: nav;
         background-color: rgb(31, 0, 0);
-        width: 100%;
+        width:100%;
         color: white;
         text-align: center;
          height:100%;
@@ -316,8 +265,8 @@ html, body {
       flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
       width: 100%; /* Occupe toute la largeur du parent */
       text-align: center;
-      font-size: 5vh;
-      padding-top:1vw;
+      font-size: 3vh;
+      padding-top:40px;
      
    
     flex-basis: 16%;
@@ -329,7 +278,7 @@ html, body {
  article{
 
     grid-area: article;
-    height: 1000px;
+    height: 300px;
  }
        
   
@@ -344,7 +293,8 @@ html, body {
         color: white;
         text-align: center;
         width: 100%;
+        
     }
-    
+     
      }
      

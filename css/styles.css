@@ -256,11 +256,11 @@ justify-content:space-evenly;
         grid-area: section;
         background-color: rgba(17, 17, 17, 0.285);
         color: black;
-        font-size: 6vw;
+        
       
     }
     p{
-       font-size:3.8vw;
+       font-size:2.5vh;
 
 
     }
@@ -274,18 +274,24 @@ justify-content:space-evenly;
       
     }
      h4{
-      font-size: 5vw;
+      font-size: 3vh;
+     }
+     h3{
+      font-size:4.5vh;
      }
      #conteneurprojets{
              display:flex;
              float: top;
             flex-direction:column;
-            font-size:3vw;
+            font-size:3vh;
              gap: 20px; 
                
          
         }
-       
+       ul,li{
+
+        font-size:3vh;
+       }
     aside {
         grid-area: aside;
         background-color: grey;
