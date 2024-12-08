@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+     
+  }
+  a {
+    color: white; 
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+         }
+
+
+  .conteneur {
+    display: grid;
+    height: 100vh; 
+    width: 100%;
+    grid-template-columns: 100%; 
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+      "header header"
+      "nav nav"
+      "section section"
+      "footer footer";
+     }
+  
+  
+  header {
+    grid-area: header;
+    background-color: rgba(50, 0, 0, 0.553);
+    font-size: 10vw;
+    color: white;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+
+  }
+  
+
+  nav {
+    grid-area: nav;
+    height:100px;
+    background-color: rgb(31, 0, 0);
+   
+    color: white;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align:center;
+   
+    
+    
+  }
+  img{
+    width: 15vw;
+    float: right;
+    height:15vw;
+    padding: 15px;
+    border-radius:  50%; 
+  }
+  .nav-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+      padding-top:1vw;
+      font-size: 3.8vw;
+    flex-grow: 1; /* Chaque item prend de l'espace disponible */
+    flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
+    flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */}
+
+
+    main{
+
+    width: 100%;
+        
+    }
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
+      grid-template-rows: repeat(2, auto); /* 2 rangées automatiques */
+      gap: 5px; /* Espacement entre les images */
+      background-color: #f0f0f0; /* Couleur de fond */
+      height: 800px;
+      width: 100%;
+    }
+    
+    .gallery {
+      display: flex; /* Flexbox pour aligner les éléments */
+      flex-direction: column; /* Aligne les éléments verticalement */
+      align-items: center; /* Centre les éléments horizontalement */
+   /* Espacement égal entre l'image et la description */
+      margin-right: 40px;
+    }
+    
+    .gallery img {
+      width: 240px; 
+      height: 240px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      padding: 0px;
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+    }
+    
+    .desc {
+      text-align: center;
+     
+      font-size: 1rem;
+      color: #0d0d0d; /* Couleur de texte grise */
+      font-style: italic; /* Style en italique pour différencier de l'image */
+      height: auto; /* Permet au texte de s'ajuster à la hauteur */
+    }
+    
+ 
+
+    
+  
+
+
+  
+  footer {
+    grid-area: footer;
+    background-color: black;
+    height: 80px;
+    color: white;
+    text-align: center;
+  }
+  #sources{
+
+    float: left;
+    padding:50px 0px 5px 5px;
+  }
+  #réalisation{
+
+    display:inline-block;
+    float: right;
+    padding:15px;
+    
+  }
+  
+  @media (max-width: 1120px) {
+    * {
+        margin: 0;
+        padding: 0;
+        
+    }
+    #imgheader{
+
+      display:none;
+    }
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+    .conteneur {
+    
+        display: grid;
+        grid-template-columns: auto auto; /* 2 colonnes pour la version mobile */
+        grid-template-rows: auto auto auto auto auto; /* 5 rangées pour les éléments */
+        grid-template-areas:
+            "header header"
+            "nav section"
+            "footer footer"; 
+        min-height: 100vh; /* Remplace height par min-height pour une flexibilité totale */
+    }
+ 
+    
+ 
+
+    
+   
+
+    header {
+      grid-area: header;
+      background-color: rgba(101, 0, 0, 0.438);
+      color: white;
+      text-align: center;
+     padding-top:40px;
+      width: 100%;
+      font-size:19vw;
+      position: relative;
+      
+  }
+    #imgheader{
+      width:100px;
+      padding:5px;
+     
+    float:none;
+     height:100px;
+     position: absolute; /* Permet de positionner l'image par rapport au conteneur */
+     bottom: 0; /* Fixe l'image en bas du conteneur */
+     left: 40%; /
+  
+      
+    }
+    nav {
+        grid-area: nav;
+        background-color: rgb(31, 0, 0);
+       max-width: 20vw;
+        color: white;
+        text-align: center;
+         height:100%;
+         display: flex;
+         flex-direction:column;
+         justify-content: space-around;
+         
+     
+    }
+    
+  .nav-item {
+      flex-grow: 1; /* L'élément prend toute la place disponible */
+      flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
+      width: 100%; /* Occupe toute la largeur du parent */
+      text-align: center;
+      font-size: 4.6;
+      padding-top:1vw;
+     
+   
+    flex-basis: 16%;
+      
+  }
+
+  .grid-section {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 colonne */
+    grid-gap: 10px;
+   
+   
+    height:fit-content;
+  }
+  
+  .gallery {
+   
+    max-width:95%;
+    border: 1px solid #0c0c0c;
+    width: 100%; 
+  
+  }
+  
+  .gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  .gallery img {
+
+    width: 60vw;
+   
+    height: auto;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    font-style: italic;
+  }
+  
+
+
+
+   
+    
+    
+
+    footer {
+        grid-area: footer;
+        background-color: black;
+       
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    
+     }
+     

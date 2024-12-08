@@ -1,0 +1,328 @@
+
+* {
+    margin: 0;
+    padding: 0;
+     
+  }
+  a {
+    color: white; 
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+
+  .conteneur {
+    display: grid;
+    height: 100vh; 
+    width: 100%;
+    grid-template-columns: 70% 30%; 
+    grid-template-rows: 3fr 1fr 4fr 4fr 2fr;
+    grid-template-areas: 
+      "header header"
+      "nav nav"
+      "section aside"
+      "article aside"
+      "footer footer";
+  }
+  main{
+    width: 100%;
+  }
+  
+  
+  header {
+    grid-area: header;
+    background-color: rgba(50, 0, 0, 0.553);
+    font-size: 10vw;
+    color: white;
+    text-align: center;
+    height: 250px;
+
+  }
+  
+
+  nav {
+    grid-area: nav;
+    height:100px;
+    background-color: rgb(31, 0, 0);
+   
+    color: white;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align:center;
+   
+    
+    
+  }
+  img{
+    width: 15vw;
+    float: right;
+    height:15vw;
+    padding: 15px;
+    border-radius:  50%; 
+  }
+  .nav-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+      padding-top:1vw;
+      font-size: 3.8vw;
+    flex-grow: 1; /* Chaque item prend de l'espace disponible */
+    flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
+    flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */
+}
+  
+  
+  section {
+    grid-area: section;
+    background-color: rgba(17, 17, 17, 0.285);
+    color: black;
+    height: 500px;
+    width: 100%;
+     font-size: 4vw;
+     padding: 0.3em;
+  }
+  .nometcabane
+  {display: flex;
+    justify-content:space-evenly;
+    flex-direction:row;
+    align-items: center;
+  }
+
+  #photocabane{
+    width: 80px;
+    float:none;
+    height:80px;
+    padding:0px;
+    border-radius:  50%; ;
+  }
+  p{
+    font-size: 2.1vw;
+    padding: 10px;;
+    
+    margin-top:1em;
+
+
+  }
+  
+  
+  
+  aside {
+    grid-area: aside;
+    background-color: grey;
+   
+    color: black;
+    
+  }
+  ul{
+    padding:20px 15px 20px 40px;
+    font-size: 2.8vw;
+
+  }
+  .interne{
+    list-style-type:square;
+  }
+  .externe{
+    list-style-type:circle;
+  }
+  h5{
+    font-size: 2.5vw;
+     padding:15px;
+  }
+  
+  
+  article {
+    grid-area: article;
+    background-color: rgb(21, 20, 20);
+    width:100%;
+    height:500px;
+    color:white;
+   
+    
+  }
+  h4{font-size: 4vw;
+    padding: 0.5em;
+
+    
+  }
+  #conteneurprojets{
+display:flex;
+justify-content:space-evenly;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-around;
+     margin-top: 15%;
+     font-size:2vw;
+     flex-wrap: wrap;
+     gap:30px;
+  }
+  projet{
+
+
+
+
+  }
+  
+  
+  footer {
+    grid-area: footer;
+    background-color: black;
+    height: 80px;
+    color: white;
+    text-align: center;
+  }
+  #sources{
+
+    float: left;
+    padding:50px 0px 5px 5px;
+  }
+  #réalisation{
+
+    display:inline-block;
+    float: right;
+    padding:15px;
+    
+  }
+  
+  @media (max-width: 641px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ajouté pour éviter les problèmes de dimensionnement */
+    }
+
+    .conteneur {
+        display: grid;
+        grid-template-columns: 30% 70%; /* 2 colonnes pour la version mobile */
+        grid-template-rows: 1fr 1fr 1fr 2fr 1fr; /* 5 rangées pour les éléments */
+        grid-template-areas:
+            "header header"
+            "nav section"
+            "nav article"
+            "aside aside"
+            "footer footer"; 
+        min-height: 100vh; /* Remplace height par min-height pour une flexibilité totale */
+    }
+
+    main {
+        width: 100%;
+    }
+
+    header {
+        grid-area: header;
+        background-color: rgba(101, 0, 0, 0.438);
+        color: white;
+        text-align: center;
+       padding-top:40px;
+        width: 100%;
+        font-size:19vw;
+        position: relative;
+        
+    }
+      img{
+        width:100px;
+        padding:5px;
+       
+      float:none;
+       height:100px;
+       position: absolute; /* Permet de positionner l'image par rapport au conteneur */
+       bottom: 0; /* Fixe l'image en bas du conteneur */
+       left: 40%; /
+    
+        
+      }
+    nav {
+        grid-area: nav;
+        background-color: rgb(31, 0, 0);
+        width: 100%;
+        color: white;
+        text-align: center;
+         height:100%;
+         display: flex;
+         flex-direction:column;
+         justify-content: space-around;
+    }
+    
+  .nav-item {
+      flex-grow: 1; /* L'élément prend toute la place disponible */
+      flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
+      width: 100%; /* Occupe toute la largeur du parent */
+      text-align: center;
+      font-size: 6vw;
+      padding-top:1vw;
+     
+   
+    flex-basis: 16%;
+      
+  }
+
+    section {
+        grid-area: section;
+        background-color: rgba(17, 17, 17, 0.285);
+        color: black;
+        
+      
+    }
+    p{
+       font-size:2.5vh;
+
+
+    }
+    article {
+        grid-area: article;
+        background-color: rgb(21, 20, 20);
+        width: 100%;
+        
+        
+      
+      
+    }
+     h4{
+      font-size: 3vh;
+     }
+     h3{
+      font-size:4vh;
+     }
+     #conteneurprojets{
+             display:flex;
+             float: top;
+            flex-direction:column;
+            font-size:3vh;
+             gap: 20px; 
+               
+         
+        }
+       ul,li{
+
+        font-size:3vh;
+       }
+    aside {
+        grid-area: aside;
+        background-color: grey;
+        color: white;
+       
+        width: 100%;
+        height: 500px;
+    }
+   
+    h5{
+      font-size: 7vw;
+       padding:15px;
+    }
+    
+
+    footer {
+        grid-area: footer;
+        background-color: black;
+       
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+}
