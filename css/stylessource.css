@@ -204,22 +204,22 @@ html, body {
     .conteneur {
     
         display: grid;
-        grid-template-columns:auto auto; /* 2 colonnes pour la version mobile */
-        grid-template-rows: auto auto auto auto auto; /* 5 rangées pour les éléments */
+        grid-template-columns:auto auto; 
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
             "header header"
             "nav section"
             "article article"
             "footer footer"; 
-        min-height: 100vh; /* Remplace height par min-height pour une flexibilité totale */
+        min-height: 100vh; 
     }
     .grid-section {
         display: grid;
         grid-template-columns: 2fr 5fr;
         grid-template-rows: repeat(5, 1fr);
-                           /* Espacement entre les cellules */
-                             /* Marge interne */
-        background-color: #f0f0f0;             /* Couleur de fond */
+                         
+                           
+        background-color: #f0f0f0;         
         border: 1px solid #ccc;  
         height:2000px;
       width: 100%;
@@ -241,7 +241,7 @@ html, body {
 
         padding:5px;
         float: right;
-        float:top;
+        
         margin-right:30px;
         
       }
@@ -259,9 +259,9 @@ html, body {
     }
     
   .nav-item {
-      flex-grow: 1; /* L'élément prend toute la place disponible */
-      flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
-      width: 100%; /* Occupe toute la largeur du parent */
+      flex-grow: 1; 
+      flex-shrink: 0; 
+      width: 100%; 
       text-align: center;
       font-size: 3vh;
      

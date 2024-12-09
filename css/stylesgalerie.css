@@ -70,9 +70,9 @@ a:hover {
     text-align: center;
       padding-top:1vw;
       font-size: 3.8vw;
-    flex-grow: 1; /* Chaque item prend de l'espace disponible */
-    flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
-    flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */}
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: 16%; }
 
 
     main{
@@ -82,19 +82,19 @@ a:hover {
     }
     .grid-section {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
-      grid-template-rows: repeat(2, auto); /* 2 rangées automatiques */
-      gap: 5px; /* Espacement entre les images */
-      background-color: #f0f0f0; /* Couleur de fond */
+      grid-template-columns: repeat(4, 1fr); 
+      grid-template-rows: repeat(2, auto); 
+      gap: 5px; 
+      background-color: #f0f0f0; 
       height: 800px;
       width: 100%;
     }
     
     .gallery {
-      display: flex; /* Flexbox pour aligner les éléments */
-      flex-direction: column; /* Aligne les éléments verticalement */
-      align-items: center; /* Centre les éléments horizontalement */
-   /* Espacement égal entre l'image et la description */
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+   
       margin-right: 40px;
     }
     
@@ -110,16 +110,16 @@ a:hover {
     }
     
     .gallery img:hover {
-      transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+      transform: scale(1.05); 
     }
     
     .desc {
       text-align: center;
      
       font-size: 1rem;
-      color: #0d0d0d; /* Couleur de texte grise */
-      font-style: italic; /* Style en italique pour différencier de l'image */
-      height: auto; /* Permet au texte de s'ajuster à la hauteur */
+      color: #0d0d0d; 
+      font-style: italic; 
+      height: auto; 
     }
     
  
@@ -167,13 +167,13 @@ html, body {
     .conteneur {
     
         display: grid;
-        grid-template-columns: auto auto; /* 2 colonnes pour la version mobile */
-        grid-template-rows: auto auto auto auto auto; /* 5 rangées pour les éléments */
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto; 
         grid-template-areas:
             "header header"
             "nav section"
             "footer footer"; 
-        min-height: 100vh; /* Remplace height par min-height pour une flexibilité totale */
+        min-height: 100vh; 
     }
  
     
@@ -199,9 +199,9 @@ html, body {
      
     float:none;
      height:100px;
-     position: absolute; /* Permet de positionner l'image par rapport au conteneur */
-     bottom: 0; /* Fixe l'image en bas du conteneur */
-     left: 40%; /
+     position: absolute;
+     bottom: 0; 
+     left: 40%; 
   
       
     }
@@ -220,11 +220,11 @@ html, body {
     }
     
   .nav-item {
-      flex-grow: 1; /* L'élément prend toute la place disponible */
-      flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
-      width: 100%; /* Occupe toute la largeur du parent */
+      flex-grow: 1; 
+      flex-shrink: 0; 
+      width: 100%; 
       text-align: center;
-      font-size: 4.6;
+     
       padding-top:1vw;
      
    
@@ -234,7 +234,7 @@ html, body {
 
   .grid-section {
     display: grid;
-    grid-template-columns: 1fr; /* 1 colonne */
+    grid-template-columns: 1fr;
     grid-gap: 10px;
    
    

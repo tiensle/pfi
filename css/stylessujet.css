@@ -73,9 +73,9 @@ a:hover {
     text-align: center;
       padding-top:1vw;
       font-size: 3.8vw;
-    flex-grow: 1; /* Chaque item prend de l'espace disponible */
-    flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
-    flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: 16%; 
 }
   
   
@@ -194,20 +194,20 @@ justify-content:space-evenly;
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box; /* Ajouté pour éviter les problèmes de dimensionnement */
+        box-sizing: border-box; 
     }
 
     .conteneur {
         display: grid;
-        grid-template-columns: 30% 70%; /* 2 colonnes pour la version mobile */
-        grid-template-rows: 1fr 1fr 1fr 2fr 1fr; /* 5 rangées pour les éléments */
+        grid-template-columns: 30% 70%; 
+        grid-template-rows: 1fr 1fr 1fr 2fr 1fr; 
         grid-template-areas:
             "header header"
             "nav section"
             "nav article"
             "aside aside"
             "footer footer"; 
-        min-height: 100vh; /* Remplace height par min-height pour une flexibilité totale */
+        min-height: 100vh;
     }
 
     main {
@@ -231,9 +231,9 @@ justify-content:space-evenly;
        
       float:none;
        height:100px;
-       position: absolute; /* Permet de positionner l'image par rapport au conteneur */
-       bottom: 0; /* Fixe l'image en bas du conteneur */
-       left: 40%; /
+       position: absolute; 
+       bottom: 0; 
+       left: 40%; 
     
         
       }
@@ -250,9 +250,9 @@ justify-content:space-evenly;
     }
     
   .nav-item {
-      flex-grow: 1; /* L'élément prend toute la place disponible */
-      flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
-      width: 100%; /* Occupe toute la largeur du parent */
+      flex-grow: 1; 
+      flex-shrink: 0; 
+      width: 100%; 
       text-align: center;
       font-size: 6vw;
       padding-top:1vw;
@@ -291,7 +291,7 @@ justify-content:space-evenly;
      }
      #conteneurprojets{
              display:flex;
-             float: top;
+            
             flex-direction:column;
             font-size:3vh;
              gap: 20px; 

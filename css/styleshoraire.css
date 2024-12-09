@@ -71,9 +71,9 @@ a:hover {
     text-align: center;
       padding-top:1vw;
       font-size: 3.8vw;
-    flex-grow: 1; /* Chaque item prend de l'espace disponible */
-    flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
-    flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */}
+    flex-grow: 1;
+    flex-shrink: 1; 
+    flex-basis: 16%; }
 
 
     main{
@@ -83,11 +83,11 @@ a:hover {
     }
     .grid-section {
         display: grid;
-        grid-template-columns: repeat(6, 1fr); /* 12 colonnes de tailles égales */
-        grid-template-rows: repeat(12, 1fr);    /* 6 lignes de tailles égales */
-                           /* Espacement entre les cellules */
-                             /* Marge interne */
-        background-color: #f0f0f0;             /* Couleur de fond */
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-rows: repeat(12, 1fr);    
+                          
+                            
+        background-color: #f0f0f0;           
         border: 1px solid #ccc;  
         height:700px;
       width: 100%;
@@ -97,8 +97,8 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ffffff;             /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
+        background-color: #ffffff;            
+        border: 1px solid #060606;                
         font-weight: bold;
         font-size: 12px;
        
@@ -150,8 +150,8 @@ height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ffffff;             /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
+        background-color: #ffffff;            
+        border: 1px solid #060606;               
         font-weight: bold;
         font-size: 12px;
         background-color: rgba(113, 215, 113, 0.648);
@@ -162,8 +162,8 @@ height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
-                   /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
+                 
+        border: 1px solid #060606;                
         font-weight: bold;
         font-size: 12px;
         background-color: lightyellow;
@@ -172,8 +172,8 @@ height: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
-                  /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
+                 
+        border: 1px solid #060606;              
         font-weight: bold;
         font-size: 12px;
         background-color: rgba(218, 81, 81, 0.6);
@@ -182,8 +182,8 @@ height: 600px;
     .cellmath{display: flex;
         justify-content: center;
         align-items: center;
-               /* Couleur de fond des cellules */
-        border: 1px solid #060606;                /* Bordure des cellules */
+              
+        border: 1px solid #060606;              
         font-weight: bold;
         font-size: 12px;
         background-color: rgba(74, 169, 216, 0.586);
@@ -193,8 +193,8 @@ height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-           /* Couleur de fond des cellules */
-    border: 1px solid #060606;                /* Bordure des cellules */
+          
+    border: 1px solid #060606;             
     font-weight: bold;
     font-size: 12px;
     background-color: rgba(228, 112, 217, 0.499);
@@ -205,8 +205,8 @@ height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-           /* Couleur de fond des cellules */
-    border: 1px solid #060606;                /* Bordure des cellules */
+          
+    border: 1px solid #060606;               
     font-weight: bold;
     font-size: 12px;
     background-color: rgba(106, 106, 232, 0.499);
@@ -260,22 +260,21 @@ html, body {
     .conteneur {
     
         display: grid;
-        grid-template-columns: auto auto; /* 2 colonnes pour la version mobile */
-        grid-template-rows: auto auto auto auto auto; /* 5 rangées pour les éléments */
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
             "header header"
             "nav section"
             "article article"
             "footer footer"; 
-        min-height: 100vh; /* Remplace height par min-height pour une flexibilité totale */
+        min-height: 100vh; 
     }
     .grid-section {
         display: grid;
-        grid-template-columns: repeat(6, 1fr); /* 3 colonnes égales */
-        grid-template-rows: repeat(12, 1fr);  /* 24 lignes égales */
+        grid-template-columns: repeat(6, 1fr);
         background-color: #f0f0f0;
         border: 1px solid #ccc;
-        height: 1400px;  /* Ajusté pour la hauteur totale */
+        height: 1400px;
         width: 100%;
     }
    
@@ -294,7 +293,7 @@ html, body {
 
         padding:5px;
         float: right;
-        float:top;
+       
         margin-right:30px;
         
       }

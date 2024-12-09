@@ -73,9 +73,9 @@ a:hover {
     text-align: center;
       padding-top:1vw;
       font-size: 3.8vw;
-    flex-grow: 1; /* Chaque item prend de l'espace disponible */
-    flex-shrink: 1; /* Chaque item peut se rétrécir si nécessaire */
-    flex-basis: 16%; /* Chaque item prendra environ 16% de la largeur du conteneur */
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: 16%;
 }
   
   
@@ -128,13 +128,13 @@ a:hover {
     border: none;
   }
   
-  /* The container <div> - needed to position the dropdown content */
+  
   .dropdown {
     position: relative;
     display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
+  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -144,7 +144,7 @@ a:hover {
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
+ 
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -152,13 +152,13 @@ a:hover {
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
+ 
   .dropdown-content a:hover {background-color: #ddd;}
   
-  /* Show the dropdown menu on hover */
+  
   .dropdown:hover .dropdown-content {display: block;}
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
+  
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
   
   
@@ -226,7 +226,7 @@ justify-content:space-evenly;
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box; /* Ajouté pour éviter les problèmes de dimensionnement */
+        box-sizing: border-box; 
     }
    header{
        font-size:12vw;
@@ -234,15 +234,15 @@ justify-content:space-evenly;
    }
     .conteneur {
         display: grid;
-        grid-template-columns: 30% 70%; /* 2 colonnes pour la version mobile */
-        grid-template-rows: 1fr 1fr 1fr 2fr 1fr; /* 5 rangées pour les éléments */
+        grid-template-columns: 30% 70%; 
+        grid-template-rows: 1fr 1fr 1fr 2fr 1fr; 
         grid-template-areas:
             "header header"
             "nav section"
             "nav article"
             "aside aside"
             "footer footer"; 
-        min-height: 100vh; /* Remplace height par min-height pour une flexibilité totale */
+        min-height: 100vh; 
     }
 
     main {
@@ -261,7 +261,7 @@ justify-content:space-evenly;
 
         padding:5px;
         float: right;
-        float:top;
+        
         display: none;
       }
     nav {
@@ -277,9 +277,9 @@ justify-content:space-evenly;
     }
     
   .nav-item {
-      flex-grow: 1; /* L'élément prend toute la place disponible */
-      flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
-      width: 100%; /* Occupe toute la largeur du parent */
+      flex-grow: 1; 
+      flex-shrink: 0; 
+      width: 100%; 
       text-align: center;
       font-size: 6vw;
       padding-top:1vw;
@@ -320,7 +320,7 @@ justify-content:space-evenly;
      }
      #conteneurprojets{
              display:flex;
-             float: top;
+           
             flex-direction:column;
             font-size:3vh;
              gap: 20px; 
