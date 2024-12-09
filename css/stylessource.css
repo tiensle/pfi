@@ -1,0 +1,295 @@
+
+* {
+    margin: 0;
+    padding: 0;
+     
+  }
+  a {
+    color: white; 
+    text-decoration: none;
+}
+
+
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+         }
+
+
+  .conteneur {
+    display: grid;
+    height: 100vh; 
+    width: 100%;
+    grid-template-columns: 100%; 
+    grid-template-rows: auto auto auto auto  ;
+    grid-template-areas: 
+      "header header"
+      "nav nav"
+      "section section"
+      
+      "footer footer";
+     }
+  
+  
+  header {
+    grid-area: header;
+    background-color: rgba(50, 0, 0, 0.553);
+    font-size: 10vw;
+    color: white;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+
+  }
+  
+
+  nav {
+    grid-area: nav;
+    height:100px;
+    background-color: rgb(31, 0, 0);
+   
+    color: white;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align:center;
+   
+    
+    
+  }
+  img{
+    width: 80px;
+    float: right;
+    height:80px;
+    padding: 15px;
+    border-radius:  50%; ;
+  }
+  .nav-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+      padding-top:1vw;
+      font-size: 3.8vw;
+    flex-grow: 1; 
+    flex-shrink: 1;
+    flex-basis: 16%; }
+
+
+    main{
+
+    width: 100%;
+        
+    }
+    .grid-section {
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        grid-template-rows: repeat(6, 1fr);
+                          
+                           
+        background-color: #f0f0f0;             
+        border: 1px solid #ccc;  
+        height:1000px;
+      width: 100%;
+      }
+      
+      .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;            
+        border: 1px solid #060606;
+        font-weight: bold;
+        font-size: 2.5vh;
+        padding:0.5em;
+       
+      }
+      .celljob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;             
+        border: 1px solid #060606;                
+        font-weight: bold;
+        font-size: 3vh;
+        padding:0.2em;
+        
+
+      }
+      .grid-section > div:nth-child(odd) {
+        background-color: #f5f5f5; 
+    }
+    
+    .grid-section > div:nth-child(even) {
+        background-color: #eaeaea; 
+    }
+      article{
+height: 100px;
+          font-size: 20px;
+        background-color: rgb(250, 230, 210)
+
+      }
+      p{
+        padding-left: 20px;
+        padding-bottom:10px;
+
+      }
+      span{
+        
+        font-size:6vh;
+        margin-top: 30px;
+        display:inline-block;
+        padding-bottom:40px;
+        padding:10px;
+
+      }
+    
+    
+  
+  
+ 
+      
+    
+
+   
+
+
+ 
+  
+  
+
+    
+ 
+
+    
+  
+
+
+  
+  footer {
+    grid-area: footer;
+    background-color: black;
+    height: 80px;
+    color: white;
+    text-align: center;
+  }
+  #sources{
+
+    float: left;
+    padding:50px 0px 5px 5px;
+  }
+  #réalisation{
+
+    display:inline-block;
+    float: right;
+    padding:15px;
+    
+  }
+  
+  @media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+    .conteneur {
+    
+        display: grid;
+        grid-template-columns:auto auto; /* 2 colonnes pour la version mobile */
+        grid-template-rows: auto auto auto auto auto; /* 5 rangées pour les éléments */
+        grid-template-areas:
+            "header header"
+            "nav section"
+            "article article"
+            "footer footer"; 
+        min-height: 100vh; /* Remplace height par min-height pour une flexibilité totale */
+    }
+    .grid-section {
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        grid-template-rows: repeat(5, 1fr);
+                           /* Espacement entre les cellules */
+                             /* Marge interne */
+        background-color: #f0f0f0;             /* Couleur de fond */
+        border: 1px solid #ccc;  
+        height:2000px;
+      width: 100%;
+      min-width: 40vh;
+    }
+   
+
+    header {
+        grid-area: header;
+        background-color: rgba(101, 0, 0, 0.438);
+        color: white;
+        text-align: center;
+        align-content: center;
+      width: 100%;
+        font-size: 8vh;
+       
+    }
+      img{
+
+        padding:5px;
+        float: right;
+        float:top;
+        margin-right:30px;
+        
+      }
+    nav {
+        grid-area: nav;
+        background-color: rgb(31, 0, 0);
+        width:100%;
+        color: white;
+        text-align: center;
+         height:100%;
+         display: flex;
+         flex-direction:column;
+         justify-content: space-around;
+     
+    }
+    
+  .nav-item {
+      flex-grow: 1; /* L'élément prend toute la place disponible */
+      flex-shrink: 0; /* L'élément ne rétrécit pas en-dessous de la taille du contenu */
+      width: 100%; /* Occupe toute la largeur du parent */
+      text-align: center;
+      font-size: 3vh;
+     
+     
+   
+    flex-basis: 16%;
+      
+  }
+
+  
+      
+ article{
+
+    grid-area: article;
+    height: 300px;
+ }
+       
+  
+   
+    
+    
+
+    footer {
+        grid-area: footer;
+        background-color: black;
+       
+        color: white;
+        text-align: center;
+        width: 100%;
+        
+    }
+     
+     }
+     
